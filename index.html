@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chmod Calculator</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="icon" type="image/png" href="https://i.imgur.com/rjT1pJQ.png">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h1 class="title is-1 is-spaced"><mark>Chmod Calculator</mark></h1>
+      <p class="subtitle is-3"><em>An awesome Chmod Calculator to convert Linux file permissions between different
+          formats.</em>
+      </p>
+      <div class="box">
+        <div class="columns">
+          <div class="column">
+            <table class="table is-fullwidth">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th><abbr title="Permissions used by the assigned owner of the file or directory">Owner</abbr></th>
+                  <th><abbr
+                      title="Permissions used by members of the group that owns the file or directory">Group</abbr>
+                  </th>
+                  <th><abbr
+                      title="Permissions used by all users other than the file owner, and members of the group that owns the file or the directory">Public</abbr>
+                  </th>
+                </tr>
+              </thead>
+              <tr>
+                <th>Read</th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+              </tr>
+              <tr>
+                <th>Write</th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+              </tr>
+              <tr>
+                <th>Execute</th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+                <th><label class="checkbox"><input type="checkbox"></label></th>
+              </tr>
+
+            </table>
+            <form class="box">
+              <div class="field">
+                <label class="label">Linux Permissions:</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="0666" readonly>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label"></label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="-rw-rw-rw-" readonly>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="column">
+            <p><strong>Chmod Calculator</strong><br>
+              Chmod Calculator is a free utility to calculate the numeric (octal) or symbolic value for a set of file or
+              folder permissions in Linux servers.
+            </p>
+            <p><strong>How to use</strong><br>
+              Check the desired boxes or directly enter a valid numeric value (e.g. 777) or symbolic notation (e.g.
+              rwxrwxrwx) to see its value in other formats.
+            </p>
+            <p><strong>File Permissions</strong><br>
+              File permissions in Linux file system are managed in three distinct user classes: user/owner, group and
+              others/public. Each class can have read, write and execute permissions. File permission can be represented
+              in a symbolic or numeric (octal) format.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="content has-text-centered">
+    <p>
+      <strong>Chmod Calculator</strong> by <a href="https://github.com/ilm1337">Iván López</a>.
+      <em>Based
+        on the original
+        <a target="_blank" href="https://chmod-calculator.com/">Chmod Calculator</a> made by someone.</em>
+    </p>
+  </div>
+</body>
+
+</html>
